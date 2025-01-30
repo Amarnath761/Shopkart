@@ -14,12 +14,14 @@
     height:100%;
     width:100;
   }
+
   #header{
     background-color:white;
     height:10%;
     width:100%;
     display:flex;
     position:fixed;
+    cursor: pointer;
   }
    .icon{
     margin:10px;
@@ -41,16 +43,10 @@
     height:10%;
     width:100%;
   }
-  #page1{
+  #page1, #page3{
     background-color:rgb(191, 191, 199);
     width:100%;
     height:100%;
-  }
-  #page2{
-    background-color:rgb(191, 191, 199);
-    width:100%;
-    height:80%;
-    display: flex;
   }
   #strip{
     background-color: rgb(0, 0, 134);
@@ -75,6 +71,7 @@
     margin-right: 3.5% ;
     margin-left : 3.5%;
     text-align : center;
+    cursor : pointer;
   }
   .strip2{
     height: 25%;
@@ -85,11 +82,95 @@
   }
   .image:hover{
     color: rgb(176, 62, 93);
-   }
-  
-  
-  
-    
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(244, 244, 244);
+}
+
+.support-container {
+    max-width: 100%;
+    height: 90%;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.support-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.support-box {
+    flex: 1 1 30%;
+    margin: 10px;
+    background-color: rgba(243, 239, 239, 0.825);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.support-box h3 {
+    color: rgb(0, 0, 0);
+}
+
+.support-box p {
+    color: rgba(0, 0, 0, 0.641);
+}
+
+.support-box a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: rgb(5, 123, 249);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.support-box a:hover {
+    background-color: rgb(0, 86, 179);
+}
+
+.contact-form {
+    margin-top: 30px;
+    background-color: rgb(249, 249, 249);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: rgb(40, 167, 69);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: rgb(32, 136, 56);
+}
+#name{
+  height: 10%;
+  width: 100%;
+  text-align: right;
+  background-color: white;
+}
   </style>
 </head>
 <body>
@@ -122,32 +203,63 @@
     </div>
 <div class="box">
   <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmZ_YW7UlMMdF-EWtRcc2yFFaroF0jM1IPGg&usqp=CAU" height="74%"width="90%">
-    <div class="strip2"><p>Samsung Galaxy S25 <br> 140000</p></div></div>
+    <div class="strip2"><p>Samsung Galaxy S25 <br> ₹140000</p></div></div>
   <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC3lMdX083KevCNfg2ZQlZqwLEzTRTHma9Hg&s" height="74%"width="90%">
-    <div class="strip2"><p>Boss Headphone Z290 <br> 30000</p></div></div>
+    <div class="strip2"><p>Bose Headphone Z290 <br> ₹30000</p></div></div>
   <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8IQa3hxbj90dIacph0XaTPlUGNjXbOBEPuVDt8Sz4JSYoV7-uX5eie0mV&s=10" height="74%"width="90%">
-    <div class="strip2"><p>MSI Gaming Laptop <br> 120000</p></div></div>
+    <div class="strip2"><p>MSI Gaming Laptop <br> ₹120000</p></div></div>
   <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsnyVrWJKPPDFDEzMHtPw2-nqX8RPnW3U1T47efKIj6QnYAqXgJtLJ_M3N&s=10" height="74%"width="90%">
-    <div class="strip2"><p>Samsung Band 4 <br> 10000</p></div></div>
+    <div class="strip2"><p>Samsung Band 4 <br> ₹10000</p></div></div>
   <div class="image"><img src="https://m.media-amazon.com/images/I/61IujYL0JTL.jpg" height="74%"width="90%">
-    <div class="strip2"><p>Casio fx-991ES <br> 3000 </p></div></div>
+    <div class="strip2"><p>Casio fx-991ES <br> ₹3000 </p></div></div>
 </div>
 <div class="box">
   <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWZLOlZlf2B3yQHIKqh3ZBXgq01T1K4UPA8g&usqp=CAU" height="74%"width="90%">
-    <div class="strip2"><p>Logitecg G560 <br> 14000</p></div></div>
+    <div class="strip2"><p>Logitecg G560 <br> ₹14000</p></div></div>
   <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2D82b42ql5hLB_K-CRzXh2OFCnxMa1uhCAQ&usqp=CAU" height="74%"width="90%">
-    <div class="strip2"><p>Soundcore Bi Anker<br>2400 </p></div></div>
+    <div class="strip2"><p>Soundcore Bi Anker<br>₹2400 </p></div></div>
   <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4SriFpLNRSEUDh4AFsF2PsyZLiZiw2zej4g&s" height="74%"width="90%">
-    <div class="strip2"><p>Infinix Note 15 5G<br> 22000</p></div></div>
+    <div class="strip2"><p>Infinix Note 15 5G<br> ₹22000</p></div></div>
   <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvkRjkY76_7ezrPqoFoe0XdJ49KWV8F5kOTg&s" height="74%"width="90%">
-    <div class="strip2"><p>Symphony 55L Cooler <br> 11000</p></div></div>
+    <div class="strip2"><p>Symphony 55L Cooler <br> ₹11000</p></div></div>
   <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlDCYHr8iV-sHECUkkgmqra312BGDpFna5EiYIbu0lgRDckusurAisNU6q&s=10" height="74%"width="90%">
-    <div class="strip2"><p>Bravia 2 55 inch <br>45000</p></div></div>
+    <div class="strip2"><p>Bravia 2 55 inch <br> ₹45000</p></div></div>
 </div>
   </div>
-  <div id="page2">
-    <div style="height: 100;width:30;display: flex;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgx2c8KptKRd8rlZjw0uE5x1Oq5mFMgnRuDg&usqp=CAU" height="80%"width="23%"</div>
-    <div style="height: 100;width:70"><img src="https://rukminim2.flixcart.com/fk-p-ads/850/400/dp-doc/1737115177687-cm60pixg78vhz0q40fxu5hh87-036bfc46bf5f5f18ff5ed023a7d6b5141da01ae83c0fac819cff2f8e2f5f1aaf.jpg?q=90" height="80%"width="115%"</div>
-  </div>
+<div id="page3">
+<div class="support-container">
+    <h2>Support Section</h2>
+    <div class="support-content">
+        <div class="support-box">
+            <h3>FAQs</h3>
+            <p>Find answers to common questions.</p>
+            <a href="#">View FAQs</a>
+        </div>      
+        <div class="support-box">
+            <h3>Live Chat</h3>
+            <p>Chat with our support team in real-time.</p>
+            <a href="#">Start Live Chat</a>
+        </div>
+
+        <div class="support-box">
+            <h3>Email Support</h3>
+            <p>Send us an email and we'll get back to you.</p>
+            <a href="mailto:Amarnath1232@gmail.com">Email Us</a>
+        </div>
+    </div>
+    <div class="contact-form">
+        <h3>Contact Us</h3>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div> <div id="name"><b>Created by</b>
+  <li><i>Amarnath Pandey(IIT2024196)</i></li>
+  <li><i>Aditya kumar(IIT2024108) </i></li>
+</div>
+</div>
 </body>
 </html>
